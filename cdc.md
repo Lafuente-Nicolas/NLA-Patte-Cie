@@ -33,3 +33,62 @@ de santé digitalisé** des animaux, à partir d'un ou plusieurs fichiers
 -   Projet clair et organisé.
 
 ------------------------------------------------------------------------
+##  Livrables
+
+-   **Use Case UML** (acteurs + cas d'utilisation).
+-   **Dictionnaire de données**.
+-   **MCD (MERISE)**.
+-   **JSON mocké** cohérent.
+-   **Pages HTML**, **CSS**, **JS** fonctionnels.
+-   **Lien de déploiement** (GitHub Pages).
+-   **Présentation** + démo.
+
+------------------------------------------------------------------------
+
+## ✔️ Critères de réussite
+
+### Analyse & conception
+
+-   Documents cohérents, simples et compréhensibles.
+-   JSON fidèle au dictionnaire.
+
+### Technique
+
+-   Maquette respectée.
+-   HTML propre et sémantique.
+-   CSS structuré.
+-   JS sans erreur console et affichage correct des données.
+-   Navigation fluide.
+
+### Présentation
+
+-   Explications claires + prototype fonctionnel.
+
+------------------------------------------------------------------------
+
+##  Structure recommandée
+
+    project/
+    ├─ index.html
+    ├─ animal.html
+    ├─ assets/css/styles.css
+    ├─ assets/js/app.js
+    └─ data/animals.json
+
+------------------------------------------------------------------------
+
+##  Exemple rapide de JSON
+
+``` json
+{
+  "animals": [
+    {
+      "id": "1",
+      "nom": "Mitsy",
+      "espece": "Chat",
+      "proprietaire": "Lucie Dupont",
+      "historique": ["Vaccination 2023", "Visite annuelle"]
+    }
+  ]
+}
+```
