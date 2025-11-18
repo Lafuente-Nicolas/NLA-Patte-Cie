@@ -66,17 +66,6 @@ de santé digitalisé** des animaux, à partir d'un ou plusieurs fichiers
 
 ------------------------------------------------------------------------
 
-##  Structure recommandée
-
-    project/
-    ├─ index.html
-    ├─ animal.html
-    ├─ assets/css/styles.css
-    ├─ assets/js/app.js
-    └─ data/animals.json
-
-------------------------------------------------------------------------
-
 ##  Exemple rapide de JSON
 
 ``` json
