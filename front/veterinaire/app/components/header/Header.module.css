@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 18px;
+  width: 100%;
+}
+
+/* Texte du header */
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+/* Conteneur icône */
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icône */
+.notification {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+/* notif rouge */
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  background: #ff4d67;
+  color: white;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+/* Responsive Desktop */
+@media (min-width: 768px) {
+  .header {
+    padding: 28px 50px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .notification {
+    width: 32px;
+    height: 32px;
+  }
+}
