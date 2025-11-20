@@ -57,3 +57,41 @@ export default function SearchBar() {
         allResults.push({ type: "Consultation", ...c });
       }
     });
+
+    // Recherche dans vaccinations
+    VACCINATION.forEach((v) => {
+      if (v.type_de_vaccin.toLowerCase().includes(value)) {
+        allResults.push({ type: "Vaccination", ...v });
+      }
+    });
+
+    setResults(allResults);
+  };
+
+  return (
+    <div className={styles.container}>
+      {/* Champ de recherche */}
+      <input
+        type="text"
+        placeholder="Rechercher : nom, vaccin, veto, animal..."
+        value={query}
+        onChange={handleSearch}
+        className={styles.searchInput}
+      />
+
+      {/* Résultats */}
+      <div className={styles.results}>
+        {results.map((item, index) => (
+          <div key={index} className={styles.card}>
+            <strong>{item.type}</strong>
+            <pre>{JSON.stringify(item, null, 2)}</pre>
+          </div>
+        ))} 
+
+        {query && results.length === 0 && (
+          <p className={styles.noResults}>Aucun résultat trouvé...</p>
+        )}
+      </div>
+    </div>
+  );
+}
