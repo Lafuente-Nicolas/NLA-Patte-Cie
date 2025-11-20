@@ -1,0 +1,60 @@
+.container {
+  padding: 15px; 
+}
+
+.card {
+  width: 100%;
+  background: linear-gradient(135deg, #6a86ff, #8a80ff);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.textBlock {
+  width: 60%;
+  color: white;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2); /* bouton semi-transparent */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px); /* effet de flou derrière le bouton */
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.imageContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.chatImage {
+  width: 150px;
+  height: auto;
+}
+
+/* Responsive Desktop */
+@media (min-width: 768px) {
+  .card {
+    padding: 35px;
+    height: 220px;
+  }
+
+  .textBlock {
+    font-size: 18px;
+  }
+
+  .chatImage {
+    width: 220px;
+  }
+}
