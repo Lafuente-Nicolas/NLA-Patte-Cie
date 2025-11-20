@@ -1,0 +1,185 @@
+{
+  "PROPRIETAIRE": [
+    {
+      "id_proprietaire": 1,
+      "nom": "Durand",
+      "prenom": "Alice",
+      "telephone": "0612345678",
+      "email": "alice.durand@example.com"
+    },
+    {
+      "id_proprietaire": 2,
+      "nom": "Martin",
+      "prenom": "Julien",
+      "telephone": "0678123456",
+      "email": "julien.martin@example.com"
+    },
+    {
+      "id_proprietaire": 3,
+      "nom": "Bernier",
+      "prenom": "Claire",
+      "telephone": "0655668899",
+      "email": "claire.bernier@example.com"
+    },
+    {
+      "id_proprietaire": 4,
+      "nom": "Fernandez",
+      "prenom": "Maxime",
+      "telephone": "0766775544",
+      "email": "maxime.fernandez@example.com"
+    }
+  ],
+
+  "ANIMAL": [
+    {
+      "id_animal": 1,
+      "nom": "Catrine",
+      "espece": "Chat",
+      "race": "British Shorthair",
+      "sexe": "F",
+      "date_de_naissance": "2022-03-12",
+      "id_proprietaire": 1
+    },
+    {
+      "id_animal": 2,
+      "nom": "Rex",
+      "espece": "Chien",
+      "race": "Berger Allemand",
+      "sexe": "M",
+      "date_de_naissance": "2021-08-05",
+      "id_proprietaire": 2
+    },
+    {
+      "id_animal": 3,
+      "nom": "Snow",
+      "espece": "Chat",
+      "race": "Européen",
+      "sexe": "M",
+      "date_de_naissance": "2023-01-15",
+      "id_proprietaire": 1
+    },
+    {
+      "id_animal": 4,
+      "nom": "Bella",
+      "espece": "Chien",
+      "race": "Bulldog Français",
+      "sexe": "F",
+      "date_de_naissance": "2020-12-11",
+      "id_proprietaire": 3
+    },
+    {
+      "id_animal": 5,
+      "nom": "Loki",
+      "espece": "Chat",
+      "race": "Siamois",
+      "sexe": "M",
+      "date_de_naissance": "2019-07-22",
+      "id_proprietaire": 4
+    },
+    {
+      "id_animal": 6,
+      "nom": "Hector",
+      "espece": "Chien",
+      "race": "Golden Retriever",
+      "sexe": "M",
+      "date_de_naissance": "2022-11-01",
+      "id_proprietaire": 4
+    }
+  ],
+
+  "VETERINAIRE": [
+    {
+      "id_veterinaire": 1,
+      "nom": "Moreau",
+      "prenom": "Sophie"
+    },
+    {
+      "id_veterinaire": 2,
+      "nom": "Bernard",
+      "prenom": "Lucas"
+    },
+    {
+      "id_veterinaire": 3,
+      "nom": "Robert",
+      "prenom": "Emilie"
+    }
+  ],
+
+  "CONSULTATION": [
+    {
+      "id_consultation": 1,
+      "date_de_consultation": "2024-11-14",
+      "motif": "Vérification générale et vaccination",
+      "id_animal": 1
+    },
+    {
+      "id_consultation": 2,
+      "date_de_consultation": "2024-10-02",
+      "motif": "Boiterie patte arrière",
+      "id_animal": 2
+    },
+    {
+      "id_consultation": 3,
+      "date_de_consultation": "2024-06-22",
+      "motif": "Vomissements fréquents",
+      "id_animal": 5
+    },
+    {
+      "id_consultation": 4,
+      "date_de_consultation": "2023-12-12",
+      "motif": "Contrôle post-opératoire",
+      "id_animal": 4
+    },
+    {
+      "id_consultation": 5,
+      "date_de_consultation": "2025-01-05",
+      "motif": "Vaccination et bilan annuel",
+      "id_animal": 6
+    }
+  ],
+
+  "VACCINATION": [
+    {
+      "id_vaccination": 1,
+      "type_de_vaccin": "Typhus",
+      "date_du_vaccin": "2024-11-14",
+      "date_de_rappel": "2025-11-14",
+      "id_animal": 1
+    },
+    {
+      "id_vaccination": 2,
+      "type_de_vaccin": "Rage",
+      "date_du_vaccin": "2024-09-30",
+      "date_de_rappel": "2025-09-30",
+      "id_animal": 2
+    },
+    {
+      "id_vaccination": 3,
+      "type_de_vaccin": "Typhus",
+      "date_du_vaccin": "2024-06-21",
+      "date_de_rappel": null,
+      "id_animal": 3
+    },
+    {
+      "id_vaccination": 4,
+      "type_de_vaccin": "Parvovirose",
+      "date_du_vaccin": "2023-12-12",
+      "date_de_rappel": "2024-12-12",
+      "id_animal": 4
+    },
+    {
+      "id_vaccination": 5,
+      "type_de_vaccin": "Typhus",
+      "date_du_vaccin": "2024-06-22",
+      "date_de_rappel": null,
+      "id_animal": 5
+    },
+    {
+      "id_vaccination": 6,
+      "type_de_vaccin": "Rage",
+      "date_du_vaccin": "2025-01-05",
+      "date_de_rappel": "2026-01-05",
+      "id_animal": 6
+    }
+  ]
+}
