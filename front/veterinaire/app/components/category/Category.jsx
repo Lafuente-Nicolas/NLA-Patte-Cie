@@ -1,30 +1,33 @@
 "use client";
 import { useState } from "react";
 import styles from "./Category.module.css";
+import Veterinarian from "../veterinarian/Veterinarian";
+
+const categories = ["Vaccine", "Surgery", "SPA & Treatment", "Consultation"];
 
 export default function Category() {
-  const categories = [
-    "Vaccine",
-    "Surgery",
-    "SPA & Treatment",
-    "Consultation"
-  ];
-
-  const [active, setActive] = useState(0); // Index du bouton actif
+  const [activeCategory, setActiveCategory] = useState("Vaccine");
 
   return (
     <div className={styles.container}>
-      {categories.map((cat, index) => (
-        <button
-          key={index}
-          className={`${styles.button} ${
-            active === index ? styles.active : ""
-          }`}
-          onClick={() => setActive(index)}
-        >
-          {cat} // Nom de la catégorie
-        </button>
-      ))}
+
+      {/* Boutons */}
+      <div className={styles.buttonContainer}>
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => setActiveCategory(cat)}
+            className={`${styles.categoryButton} ${
+              activeCategory === cat ? styles.active : ""
+            }`}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      {/* Affichage des cartes */}
+      <Veterinarian category={activeCategory} />
     </div>
   );
 }
