@@ -90,18 +90,27 @@
   "VETERINAIRE": [
     {
       "id_veterinaire": 1,
-      "nom": "Moreau",
-      "prenom": "Sophie"
+      "nom": "Stone",
+      "prenom": "Alex",
+      "services": ["Vaccine", "Surgery"],
+      "distance": "10km",
+      "image": "dr-stone.png"
     },
     {
       "id_veterinaire": 2,
-      "nom": "Bernard",
-      "prenom": "Lucas"
+      "nom": "Vanessa",
+      "prenom": "Marion",
+      "services": ["Surgery", "Consultation"],
+      "distance": "8km",
+      "image": "dr-vanessa.png"
     },
     {
       "id_veterinaire": 3,
-      "nom": "Robert",
-      "prenom": "Emilie"
+      "nom": "Paul",
+      "prenom": "Richard",
+      "services": ["SPA & Treatment"],
+      "distance": "15km",
+      "image": "dr-paul.png"
     }
   ],
 
