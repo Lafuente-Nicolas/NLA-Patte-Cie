@@ -1,6 +1,6 @@
 "use client";
 import data from "../../data/data.json";
-import styles from "./Veterinarian.module.css";
+import styles from "./veterinarian.module.css";
 
 export default function Veterinarian({ category }) {
   const vets = data.VETERINAIRE;

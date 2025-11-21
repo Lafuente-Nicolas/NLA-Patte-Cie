@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 0;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.iconWrapper {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+.icon {
+  object-fit: contain;
+  filter: brightness(0.7);
+  transition: 0.2s ease;
+}
+
+.active {
+  filter: none !important;
+}
