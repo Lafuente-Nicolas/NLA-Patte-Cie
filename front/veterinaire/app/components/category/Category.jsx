@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./Category.module.css";
-import Veterinarian from "../veterinarian/Veterinarian";
+import Veterinarian from "../veterinarian/veterinarian";
 
 const categories = ["Vaccine", "Surgery", "SPA & Treatment", "Consultation"];
 
