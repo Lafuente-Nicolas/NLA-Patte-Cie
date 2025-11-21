@@ -1,0 +1,21 @@
+.categoryButton {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+  transition: 0.18s;
+}
+
+.categoryButton:hover:not(.active) {
+  background: #ddd;
+}
+
+.active {
+  background: #7b61ff;
+  color: white;
+}
+
+.active:hover {
+  background: #6a52ff;
+}
