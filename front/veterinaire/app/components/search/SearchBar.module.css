@@ -1,33 +1,51 @@
 .container {
   width: 100%;
-  margin-top: 15px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .searchInput {
   width: 100%;
-  padding: 12px 15px;
-  border-radius: 12px;
-  border: none;
-  background: #f4f4f4;
-  font-size: 14px;
-  outline: none;  /*supprimer le contour par défaut*/
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .results {
-  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .card {
   background: white;
-  padding: 12px;
-  margin-bottom: 10px;
   border-radius: 10px;
-  font-size: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  padding: 15px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+  animation: fade 0.2s ease-in-out;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .noResults {
-  margin-top: 10px;
-  font-size: 13px;
-  color: #888;
+  text-align: center;
+  color: #777;
+}
+
+/* animation  */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
